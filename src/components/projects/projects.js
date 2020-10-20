@@ -1,9 +1,13 @@
 import React from 'react';
 
 
-class projects extends React.Component {
+class Projects extends React.Component {
     render() {
-      return <h1>Hello, {this.props.name}</h1>;
+      return (
+          <div className = "Main">
+
+          </div>
+      );
     }
 }
-export default projects;
+export default Projects;
