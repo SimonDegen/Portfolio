@@ -1,0 +1,35 @@
+.Navbar{
+    position: absolute;
+    min-height: 0vh;
+    max-height: 0vh;
+    min-width: 35vw;
+    z-index: 2;
+    opacity: 1;
+  }
+  .navitem{
+    padding: 10px;
+    position: relative;
+    width: 10vw;
+    height: 0vh;
+    color: white;
+    margin: 5px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+    float: left;
+  }
+  a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: aliceblue;
+    height: 0px;
+  }
+  a:hover{
+    color: rgb(71, 87, 63);
+  }
