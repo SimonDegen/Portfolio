@@ -1,4 +1,4 @@
-.Main{
+.ContentHolder{
     position: relative;
     min-height: 100vh;
     min-width: 40vw;
@@ -9,4 +9,184 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+}
+
+.left{
+    position: absolute;
+    left: 0%;
+    min-height: 100vh;
+    width: 65vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #e5e5e5;
+    z-index: 1;
+}
+
+.right{
+    right: 0%;
+    width: 35vw;
+    position: absolute;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #29333D;
+    text-align: center;
+    size: 10px;
+    font-size: large;
+    padding: 0%;
+    -webkit-box-shadow: -14px -2px 24px 2px rgba(0,0,0,0.43);
+    -moz-box-shadow: -14px -2px 24px 2px rgba(0,0,0,0.43);
+    box-shadow: -14px -2px 24px 2px rgba(0,0,0,0.43);
+    z-index: 3;
+    animation-name: rightToLeft;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+}
+.homecontent{
+    visibility: visible;
+    animation-name: hide;
+    animation-duration: 1.5s;  
+    animation-fill-mode: forwards;
+}
+
+.Me{
+    position: relative;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-shadow: 6px 6px 21px 1px rgba(0,0,0,0.76);
+    -moz-box-shadow: 6px 6px 21px 1px rgba(0,0,0,0.76);
+    box-shadow: 6px 6px 21px 1px rgba(0,0,0,0.76);
+}
+
+#frontpagecontent{
+    width: 30vw;
+    padding-left: 10px;
+    padding-right: 0px;
+    margin-right: 0px;
+    text-align: left;
+}
+        
+.NewImage{
+    right: 0%;
+    width: 35vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url("/projectimage2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ProjectContainer{
+    position: absolute;
+    opacity: 0;
+    width: 50vw;
+    height: 40vw;
+    animation-delay: 3s;
+    animation-name: show;
+    animation-duration: 1.5s;  
+    animation-fill-mode: forwards;
+}
+.testcomponent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    animation-delay: 5s;
+    animation-name: movedown;
+    animation-duration: 1.5s;  
+    animation-fill-mode: forwards;
+}
+.Image{
+    width: 90%;
+    height: 50%;
+    padding: 10px;
+    background-image: url("https://s0rensen.no/images/avalon.png");
+    border-radius: 10px;
+}
+.Text{
+    width: 100%;
+    height: 50%;
+    margin: 10px;
+}
+p{
+    text-align: left;
+}
+
+.Li-Item{
+    float: left;
+    clear: left;
+    padding: 30px;
+    font-size: 2em;
+    font-weight: bolder;
+    color: white;
+    z-index: 10;
+}
+.Li-Item:hover{
+    color: #29333D;
+}
+.Listen{
+    position: absolute;
+    animation-delay: 1.5s;
+    animation-name: projects;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+    opacity: 0;
+    bottom: 0%;
+}
+
+
+@keyframes rightToLeft{
+    from {
+        right: 0%;
+        width: 35%;
+    }
+    to {
+        right: 35%;
+        width: 65%;
+        -webkit-box-shadow: 6px -2px 4px 4px rgba(0,0,0,0.48);
+        -moz-box-shadow: 6px -2px 4px 4px rgba(0,0,0,0.48);
+        box-shadow: 6px -2px 4px 4px rgba(0,0,0,0.48);
+    }
+}
+@keyframes hide{
+    from{
+        opacity: 1;
+    }
+    to{
+        z-index: 0;
+        opacity: 0;
+    }
+}
+@keyframes show{
+    from{
+        opacity: 0;
+    }
+    to{
+        z-index: 3;
+        opacity: 1;
+    }
+}
+
+@keyframes projects{
+    from{
+        bottom: 0%;
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        bottom: 30%;
+    }
 }

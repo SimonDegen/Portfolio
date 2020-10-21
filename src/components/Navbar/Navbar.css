@@ -3,7 +3,7 @@
     min-height: 0vh;
     max-height: 0vh;
     min-width: 35vw;
-    z-index: 2;
+    z-index: 5;
     opacity: 1;
   }
   .navitem{
