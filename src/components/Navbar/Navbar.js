@@ -4,10 +4,12 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
+  useLocation
 } from "react-router-dom";
 import Projects from '../Projects/Projects';
 import Home from '../Home/Home'
+
 
 export default function Navbar() {
   return (
@@ -21,21 +23,11 @@ export default function Navbar() {
             <li className = "navitem">
               <Link to="/Projects">Projects</Link>
             </li>
-            <li className = "navitem">
-              <Link to="/Contact">Contact</Link>
-            </li>
-            <li className = "navitem">
-              <Link to="/About">About</Link>
-            </li>
           </ul>
         </nav>
-        <Switch>
-          <Route path="/About">
-            <Projects />
-          </Route>
-          <Route path="/Contact">
-            <Projects />
-          </Route>
+       
+      </div>
+      <Switch>
           <Route path="/Projects">
             <Projects />
           </Route>
@@ -43,7 +35,6 @@ export default function Navbar() {
             <Home />
           </Route>
         </Switch>
-      </div>
     </Router>
   );
 }

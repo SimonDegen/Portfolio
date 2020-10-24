@@ -1,13 +1,20 @@
 import React from 'react';
 import Typical from 'react-typical'
 import './Home.css'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useLocation
+} from "react-router-dom";
 
 function test(){
     const el = document.querySelector("#module");
     if(el){
       el.addEventListener("mousemove", (e) => {
-      el.style.setProperty('--x', -e.offsetX/10 + "px");
-      el.style.setProperty('--y', -e.offsetY/10 + "px");
+      el.style.setProperty('--x', -e.offsetX/15 + "px");
+      el.style.setProperty('--y', -e.offsetY/15 + "px");
     });
     }
   }
@@ -35,6 +42,7 @@ class Home extends React.Component {
                     </p>
                 </div>
             </div>
+
       </div>
     );
   }
