@@ -1,40 +1,22 @@
 import React from 'react';
 import './Navbar.css'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useLocation
-} from "react-router-dom";
-import Projects from '../Projects/Projects';
-import Home from '../Home/Home'
 
-
-export default function Navbar() {
+export default function Navbar(props) {
   return (
-    <Router>
       <div>
         <nav>
           <ul className = "Navbar">
             <li className = "navitem">
-              <Link to="/">Home</Link>
+              <h4 onClick= {() => props.setCurrentPage(1)}>Home</h4>
             </li>
             <li className = "navitem">
-              <Link to="/Projects">Projects</Link>
+              <h4 onClick= {() => props.setCurrentPage(2)} >Projects</h4>
+            </li>
+            <li className = "navitem">
+              <h4 onClick= {() => props.setShowContact(true)} >Contact</h4>
             </li>
           </ul>
         </nav>
-       
       </div>
-      <Switch>
-          <Route path="/Projects">
-            <Projects />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-    </Router>
   );
 }

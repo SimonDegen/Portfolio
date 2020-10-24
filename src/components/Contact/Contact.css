@@ -1,0 +1,134 @@
+
+.MainContainer{
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Greybackground{
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.3);
+    opacity: 0.4;
+    z-index: 11;
+    display: flex;
+    animation-name: faderinhalf;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
+.Card{
+    left: 0;
+    position: absolute;
+    min-width: 65vw;
+    min-height: 100vh;
+    background-color: #29333D;
+    animation-name: slidein;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+    -webkit-box-shadow: -14px -2px 24px 2px rgba(0,0,0,0.43);
+    -moz-box-shadow: -14px -2px 24px 2px rgba(0,0,0,0.43);
+    box-shadow: -14px -2px 24px 2px rgba(0,0,0,0.43);
+    z-index: 12;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    color: white;
+}
+.Top{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    height: 40%;
+    padding-top: 10%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+.contentbox{
+    top: 10%;
+    padding: 5%;    
+    width: 90%;
+    height: 80%;
+    margin-right: 0%;
+}
+.Bottom{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 40%;
+    padding-bottom: 10%;
+}
+a{
+    top: 50%;
+    display: inline;
+    height: 100px;
+    width: 200px    ;
+    position: relative;
+    margin: 20px;
+}
+.Slideout{
+    animation-name: slideout;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
+
+.Fadeout{
+    animation-name: fadeout;
+    animation-duration: 2s;  
+    animation-fill-mode: forwards;
+}
+.Close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+
+@keyframes slidein{
+    from{
+        opacity: 0;
+        left: -50%;
+    }
+    to{
+        left: 0%;
+        opacity: 1;
+    }
+}
+@keyframes slideout{
+    from{
+        opacity: 1;
+        left: 0%;
+    }
+    to{
+        opacity: 0.5;
+        left: -65%;
+    }
+}
+@keyframes faderinhalf{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 0.9;
+    }
+}
+@keyframes fadeout{
+    from{
+        opacity: 0.9;
+    }
+    to{
+        opacity: 0;
+    }
+}

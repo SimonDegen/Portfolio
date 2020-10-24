@@ -4,35 +4,57 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     z-index: 1;
-/*     animation-delay: 1s;
-    animation-name: show;
-    animation-duration: 1.5s;  
+    animation-name: slideinbottom;
+    animation-duration: 2s;  
     animation-fill-mode: forwards;
-    opacity: 0; */
+
 }
 
 .Image{
-    width: 90%;
-    height: 50%;
+    max-width: 90%;
+    max-height: 50%;
     padding: 10px;
-    background-image: url("https://s0rensen.no/images/avalon.png");
-    background-size: cover;
-    border-radius: 10px;
+}
+.Imagecontent{
+    max-width: 100%;
+    max-height: 80%;
+    z-index: 10;
+    -webkit-box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.51);
+    -moz-box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.51);
+    box-shadow: 0px 0px 15px 7px rgba(0,0,0,0.51);
 }
 .Text{
     width: 100%;
     height: 50%;
     margin: 10px;
 }
-@keyframes show{
+
+.slideOut{
+    animation-name: slideouter;
+    animation-duration: 3s;  
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideouter{
     from{
-        opacity: 0;
+        left: 0;
+        opacity: 1;
     }
     to{
-        z-index: 3;
+        opacity: 0;
+        left: -150%;
+    }
+}
+@keyframes slideinbottom{
+    from{
+        top: 150%;
+        opacity: 0.3;
+    }
+    to{
+        top: 0;
         opacity: 1;
     }
 }

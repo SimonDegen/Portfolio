@@ -3,7 +3,7 @@
     min-height: 0vh;
     max-height: 0vh;
     min-width: 35vw;
-    z-index: 5;
+    z-index: 7;
     opacity: 1;
   }
   .navitem{
@@ -32,4 +32,8 @@
   }
   a:hover{
     color: rgb(71, 87, 63);
+  }
+  h4:hover{
+    cursor: pointer;
+    color: rgb(156, 198, 235);
   }

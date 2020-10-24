@@ -16,9 +16,8 @@ function test(){
     }
   }
 
-
 function Projects (){
-    const [count,setcount] = useState(0);
+    const [count,setcount] = useState(1);
     /* const [visible,toggle] = useState(Boolean)
     const fadeout = function(){
         setTimeout(() => {  
@@ -27,6 +26,30 @@ function Projects (){
             element.className = "fadeout"
             }, 1000);
     } */
+    function AddClass(number){
+        if(number == count) return;
+        setTimeout(function(){ setcount(number); }, 1300);
+        var elementen = document.getElementById("CurrentProject");
+        elementen.className = "container slideOut";
+        /* var imagebackground = document.getElementById("ProjectSelecter");
+        imagebackground.classList.add("slideImageOut");
+        setTimeout(() => {
+            imagebackground.classList.remove("bkAvalon","bkBachelor","bkPortfolio","slideImageIn", "slideImageOut")
+            switch(number){
+                case 1:
+                    imagebackground.classList.add("bkAvalon","slideImageIn")
+                    break
+                case 2:
+                    imagebackground.classList.add("bkBachelor","slideImageIn")                
+                    break
+                case 3:
+                    imagebackground.classList.add("bkPortfolio","slideImageIn")                
+                    break
+                
+            }
+        }, 1300); */
+    }
+    
     return (
         <div className="ContentHolder" >
             <div className="left">
@@ -36,7 +59,7 @@ function Projects (){
             </div>
             <div className = "right">
                 <div className = "homecontent">
-                    <img className = "Me" src = "Me.jpg" width = "250px" height = "375px"></img>
+                    <img className = "Me" src = "smile.jpg" width = "250px" height = "375px"></img>
                     <p id = "frontpagecontent">
                     Hello, my name is Simon Degen and im 21 years old. I am currently studying industriell economics. I have a bachelores degree as a 
                     Computer engineer. A fun fact about me is that i have lived in 4 countries and therefor i know 4 languages fluently. English, Norwegian, German and Danish
@@ -57,12 +80,14 @@ function Projects (){
                         })()}
                 </div>
             </div>
-            <div className = "NewImage">
+            <div className = "NewImage" id = "Defaulten">
                 <ul className = "Listen">
-                    <li className = "Li-Item" onClick= {() => setcount(1)} >Avalon</li>
-                    <li className = "Li-Item" onClick= {() => setcount(2)} >Bachelor</li>
-                    <li className = "Li-Item" onClick= {() => setcount(3)} >Portfolio</li>
+                    <li className = "Li-Item" onClick= {() => AddClass(1)} >Avalon</li>
+                    <li className = "Li-Item" onClick= {() => AddClass(2)} >Bachelor</li>
+                    <li className = "Li-Item" onClick= {() => AddClass(3)} >Portfolio</li>
                 </ul>
+                <div id = "ProjectSelecter">
+                </div>
             </div>
         </div>
     );

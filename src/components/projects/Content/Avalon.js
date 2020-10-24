@@ -3,8 +3,10 @@ import './Content.css'
 
 export default function Avalon() {
   return (
-    <div className = "container">
-        <div className = "Image"></div>
+    <div className = "container" id = "CurrentProject">
+        <div className = "Image">
+            <img className = "Imagecontent" src = "https://s0rensen.no/images/avalon.png"></img>
+        </div>
         <div className = "Text">
             <h3>Avalon: The Resistance</h3>
             <p>Avalon: The Resistance is a card role playing game for multiple players, which we have digitalized. Avalon is a game of social deduction in which 5-10 players work together to find the players that have been dealt the evil roles. To remove the need for a separate person called a 'game master', we have digitalized Avalon so that you and your friends can play using your smartphones and a TV.
