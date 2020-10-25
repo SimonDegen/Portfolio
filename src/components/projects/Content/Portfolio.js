@@ -5,14 +5,17 @@ export default function Portfolio() {
   return (
     <div className = "container" id = "CurrentProject">
         <div className = "Image">
-            <img className = "Imagecontent" src = "Porto.png"></img>
+            <img className = "Imagecontent" src = "Portonew.png"></img>
         </div>
         <div className = "Text">
             <h3>Portfolio</h3>
-            <p>Avalon: The Resistance is a card role playing game for multiple players, which we have digitalized. Avalon is a game of social deduction in which 5-10 players work together to find the players that have been dealt the evil roles. To remove the need for a separate person called a 'game master', we have digitalized Avalon so that you and your friends can play using your smartphones and a TV.
-            My motivation for this project was that we used to play Avalon, but every round one player had to sit out and function as the 'game master'. In our version the application functions as the game master, resulting in a game experience where all players can partake.
-            When the time came to choose a tech stack for this project, I had just started working at Netpower. Therefore I decided that we should use the same stack as in Flydrone.no, so that this project could be used as a learning grounds for the project at work. This includes a C#/.NET Core backend with a React.js with Mobx frontend. The database uses Entity Framework Core for code-first migrations and this whole project is hosted, with full CI/CD, on Azure. Additionally, we used WebSockets for real-time connections, which has grown to become one of my favorite technologies.
+            <p>
+            My motivation for creating this portfolio was simply to have fun and become more proficient in technologoies such as ReactJS. I 
+            created this on my free time and take great pleasure in designing and implementing new and cool features. I have worked with React several times 
+            before but have mainly focused on the backend aspects of projects so far. So to be able to souly focus on the desgin aspects of things has been very
+            fun and something i am very keen on doing more project like this in the future. My github and this project can be found by clicking the logo below.
             </p>
+            <a href = "https://github.com/SimonDegen/Portfolio" target="_blank" right= "50%"><img src = "githubsmall.png" height= "50px" width ="50px"></img></a>            
         </div>
     </div>
 

@@ -1,13 +1,8 @@
 import React from 'react';
 import Typical from 'react-typical'
 import './Home.css'
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link,
-  useLocation
-} from "react-router-dom";
+import ReactTypingEffect from 'react-typing-effect';
+
 
 function test(){
     const el = document.querySelector("#module");
@@ -26,12 +21,19 @@ class Home extends React.Component {
             <div className="l">
                 <div id = "module" className = "background" onMouseMove = {test}>
                 </div >
-                <Typical
-                    steps={['Welcome to my portfolio!', 3000, 'Have a look around!', 5000]}
-                    loop={1}
-                    wrapper="h1"
-                    className = "magic"
-                    onMouseMove = {test}
+                <ReactTypingEffect 
+                  text={["Welcome to my Portfolio!", "Have a look around!"]}
+                  cursorRenderer={cursor => <h1>{cursor}</h1>}
+                  speed = {150}
+                  eraseSpeed = {150}
+                  typingDelay = {1000}
+                  displayTextRenderer={(text, i) => {
+                    return (
+                      <h1>
+                        {text}
+                      </h1>
+                    );
+                  }}        
                 />
             </div>
             <div className = "Body">

@@ -9,12 +9,19 @@ export default function Bachelor() {
         </div>
         <div className = "Text">
             <h3>Bacheloren</h3>
-            <p>Avalon: The Resistance is a card role playing game for multiple players, which we have digitalized. Avalon is a game of social deduction in which 5-10 players work together to find the players that have been dealt the evil roles. To remove the need for a separate person called a 'game master', we have digitalized Avalon so that you and your friends can play using your smartphones and a TV.
-            My motivation for this project was that we used to play Avalon, but every round one player had to sit out and function as the 'game master'. In our version the application functions as the game master, resulting in a game experience where all players can partake.
-            When the time came to choose a tech stack for this project, I had just started working at Netpower. Therefore I decided that we should use the same stack as in Flydrone.no, so that this project could be used as a learning grounds for the project at work. This includes a C#/.NET Core backend with a React.js with Mobx frontend. The database uses Entity Framework Core for code-first migrations and this whole project is hosted, with full CI/CD, on Azure. Additionally, we used WebSockets for real-time connections, which has grown to become one of my favorite technologies.
-            </p>
+            <p>Booking and attending meetings is an essential part of everyday life for many people. 
+                Organizing a meeting in a way so that it fits everyone's schedule can be a difficult process and can take up valuable time for 
+                the people involved. That is exactly why we wanted to make this our project. The goal for this project is to simplify this
+                 process by the use of a platform which uses the Microsoft Graph API and focuses on user simplicity. Booking a meeting should be 
+                 an easy task from beginning to end. There are already different applications made for tackling this task, but quite a few of these 
+                 require work from the user which we consider to be unnecessary. The motivation behind this project is as mentioned to make the 
+                 process of arrangingmeetings easier for the people planning and attending. Aside from that, our personalmotivation is directed 
+                 towards learning new technology and new languages, such as C#,.NET CORE, and React, which we have never used before. We created this
+                 project using Azure DevOps. I would like to thank Veni for their help and guidance in creating this project. This project was created in
+                 collabotarion with Johanna Kinstad. For more information about my bachelor please dont hesitate to send me a email or contact me on LinkedIn 
+                 which can be found on the contact page.
+                 </p>
         </div>
     </div>
-
     );
 }

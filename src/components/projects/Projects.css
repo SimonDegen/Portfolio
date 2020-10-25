@@ -76,14 +76,16 @@
     width: 35vw;
     height: 100vh;
     position: absolute;
-    background-image: url("/projectimage2.jpg");
+    background-image: url("https://bigseventravel.com/wp-content/uploads/2019/11/balazs-busznyak-hzSxZM9IoQo-unsplash.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    filter: grayscale(90%);
     z-index: 5;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    background-position-x: -100px;
 }
 #ProjectSelecter{
     position: absolute;
@@ -138,11 +140,10 @@ p{
     font-size: 2em;
     font-weight: bolder;
     color: white;
-    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
     z-index: 10;
 }
 .Li-Item:hover{
-    color: #29333D;
+    color: #1389ff;
     cursor: pointer;
 }
 .Listen{

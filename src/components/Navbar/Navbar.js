@@ -7,13 +7,13 @@ export default function Navbar(props) {
         <nav>
           <ul className = "Navbar">
             <li className = "navitem">
-              <h4 onClick= {() => props.setCurrentPage(1)}>Home</h4>
+              <a onClick= {() => props.setCurrentPage(1)}>Home</a>
             </li>
             <li className = "navitem">
-              <h4 onClick= {() => props.setCurrentPage(2)} >Projects</h4>
+              <a onClick= {() => props.setCurrentPage(2)}>Projects</a>
             </li>
             <li className = "navitem">
-              <h4 onClick= {() => props.setShowContact(true)} >Contact</h4>
+              <a onClick= {() => props.setShowContact(true)}>Contact</a>
             </li>
           </ul>
         </nav>

@@ -1,7 +1,7 @@
 .Navbar{
     position: absolute;
-    min-height: 0vh;
-    max-height: 0vh;
+    min-height: 100px;
+    max-height: 100px;
     min-width: 35vw;
     z-index: 7;
     opacity: 1;
@@ -23,7 +23,7 @@
     display: inline;
     float: left;
   }
-  a {
+  a{
     display: block;
     padding: 8px;
     text-decoration: none;
@@ -32,8 +32,6 @@
   }
   a:hover{
     color: rgb(71, 87, 63);
-  }
-  h4:hover{
     cursor: pointer;
-    color: rgb(156, 198, 235);
+
   }
