@@ -40,8 +40,8 @@ class Home extends React.Component {
                 <div>
                     <img className = "Me" src = "smile.jpg" width = "250px" height = "375px"></img>
                     <p id = "frontpagecontent">
-                    Hello, my name is Simon Degen and im 21 years old. I am currently studying industriell economics. I have a bachelores degree as a 
-                    Computer engineer. A fun fact about me is that i have lived in 4 countries and therefor i know 4 languages fluently. English, Norwegian, German and Danish
+                    Hello, my name is Simon Degen and im 21 years old. I have a bachelores degree as a 
+                    Computer engineer, and am currently studying industrial economics in Stavanger.
                     </p>
                 </div>
             </div>
